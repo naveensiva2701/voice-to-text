@@ -18,18 +18,15 @@ else{
         if(!listening){
             recognition.start();
             startStopBtn.textContent='Stop Listening';
-            // startStopBtn.classList.replace('bg-blue-600','bg-red-600');
-        
-             startStopBtn.classList.remove('bg-blue-500');
-  startStopBtn.classList.add('bg-red-500');
+            startStopBtn.classList.remove('bg-blue-500');
+            startStopBtn.classList.add('bg-red-500');
             listening=true;
         }
         else{
             recognition.stop();
             startStopBtn.textContent='Start Listening';
-            // startStopBtn.classList.replace('bg-red-600','bg-blue-600');
-             startStopBtn.classList.remove('bg-red-500');
-  startStopBtn.classList.add('bg-blue-500');
+            startStopBtn.classList.remove('bg-red-500');
+            startStopBtn.classList.add('bg-blue-500');
             listening=false;
         }
     });
